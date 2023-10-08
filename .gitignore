@@ -22,6 +22,9 @@ build
 *.pem
 dist
 
+# yarn
+.yarn/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
