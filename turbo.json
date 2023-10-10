@@ -10,7 +10,12 @@
       "cache": false,
       "persistent": true
     },
-    "lint": {},
+    "lint": {
+      "outputs": []
+    },
+    "format": {
+      "outputs": []
+    },
     "clean": {
       "cache": false
     }

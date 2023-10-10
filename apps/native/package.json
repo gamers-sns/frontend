@@ -20,6 +20,7 @@
     "ui": "*"
   },
   "devDependencies": {
+    "eslint-config-custom":"*",
     "@babel/core": "^7.12.9",
     "@types/react": "^18.0.22",
     "@types/react-native": "^0.69.15",
