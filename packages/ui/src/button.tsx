@@ -4,16 +4,19 @@ import {
   StyleSheet,
   GestureResponderEvent,
   Text,
+  StyleProp,
+  ViewStyle,
 } from "react-native";
 
 export interface ButtonProps {
   text: string;
   onClick?: (event: GestureResponderEvent) => void;
+  style?: StyleProp<ViewStyle>;
 }
 
-export function Button({ text, onClick }: ButtonProps) {
+export function Button({ text, onClick, style }: ButtonProps) {
   return (
-    <TouchableOpacity style={styles.button} onPress={onClick}>
+    <TouchableOpacity style={[styles.button, style]} onPress={onClick}>
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
   );
