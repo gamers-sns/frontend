@@ -8,6 +8,7 @@ type RootStackParamList = {
   Landing: undefined;
   Login: undefined;
   Register: undefined;
+  Timeline: undefined
 };
 
 type LandingPageNavigationProp = StackNavigationProp<
@@ -24,6 +25,7 @@ const LandingPage: React.FC<Props> = ({ navigation }) => {
           <View style={styles.buttonContainer}>
           <Button text="登録する" onClick={() => navigation.navigate('Register')} style={{ marginVertical:10}}/>
             <Button text="ログイン" onClick={() => navigation.navigate('Login')}/>
+            <Button text="タイムライン" onClick={() => navigation.navigate('Timeline')} style={{ marginVertical: 10 }}/>
           </View>
         </View>
       );
